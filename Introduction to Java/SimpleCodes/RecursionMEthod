@@ -1,0 +1,33 @@
+//recursion Method
+
+
+import java.util.Scanner;
+public class ReverseNumber_RecursionMethod {
+
+	public static void main(String[] args) {
+		
+		
+		int num=0;
+		System.out.println("Input your number and press enter: ");
+		Scanner in = new Scanner(System.in);
+		num = in.nextInt();
+		System.out.print("Reverse of the input number is:");
+		reverseMethod(num);
+		
+		
+		
+
+	}
+	 public static void reverseMethod(int number) {
+	       if (number < 10) {
+		   System.out.println(number);
+		   
+	       }
+	       else {
+	    	   
+	           System.out.print(number % 10); //getting the remainder of the number input;
+	           
+	           reverseMethod(number/10); //recursive call, Ex. 125-->124%10=4 -->125/10=12 -->12%10=2 -->12/10=1
+	       }
+	   }
+}
