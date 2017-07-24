@@ -35,7 +35,7 @@ public class UNIT4_Exercise12_30
 		{
 			while(reader.hasNextLine())			//it goes through the whole file
 			{
-				String fileLine=reader.nextLine().toUpperCase();
+				String fileLine=reader.nextLine().toUpperCase(); //convert ALL to UpperCase so u can count all Letters
 				
 				for(int i=0;i<fileLine.length();i++)
 				{
