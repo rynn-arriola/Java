@@ -1,6 +1,5 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 public class Count_char_words_lines
 {
