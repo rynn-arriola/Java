@@ -1,4 +1,24 @@
+/*
+(The ComparableCircle class) Define a class named ComparableCircle that extends
+Circle and implements Comparable and implement the compareTo method to compare
+the circles on the basis of area. Write a test class to find the larger of two instances of
+ComparableCircle objects.
+A. Sample main method:
+public static void main(String[] args) {
+ // Create two comarable rectangles
+ ComparableCircle circle1 = new ComparableCircle(5);
+ ComparableCircle circle2 = new ComparableCircle(15);
+ // Display the max circle
+ ComparableCircle circle3 = (ComparableCircle)Max.max(circle1, circle2);
+ System.out.println("The max circle's radius is " + circle3.getRadius());
+ System.out.println(circle3);
+}
+B. The sample output from the above main method:
+The max circle's radius is 15.0
+[Circle] radius = 15.0
+Process completed.
 
+*/
 public class UNIT4_Exercise13_6 
 {
 
