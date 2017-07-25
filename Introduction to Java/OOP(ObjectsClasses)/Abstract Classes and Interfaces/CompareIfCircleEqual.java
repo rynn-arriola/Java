@@ -1,21 +1,17 @@
 /*
-(The ComparableCircle class) Define a class named ComparableCircle that extends
-Circle and implements Comparable and implement the compareTo method to compare
-the circles on the basis of area. Write a test class to find the larger of two instances of
-ComparableCircle objects.
+(Enable Circle comparable) Rewrite the Circle class in Listing 13.2 to extend
+GeometricObject and implement the Comparable interface. Override the equals
+method in the Object class. Two Circle objects are equal if their radii are the same.
 A. Sample main method:
 public static void main(String[] args) {
- // Create two comarable rectangles
- ComparableCircle circle1 = new ComparableCircle(5);
- ComparableCircle circle2 = new ComparableCircle(15);
- // Display the max circle
- ComparableCircle circle3 = (ComparableCircle)Max.max(circle1, circle2);
- System.out.println("The max circle's radius is " + circle3.getRadius());
- System.out.println(circle3);
+ Circle13_09 obj1 = new Circle13_09();
+ Circle13_09 obj2 = new Circle13_09();
+ System.out.println(obj1.equals(obj2));
+ System.out.println(obj1.compareTo(obj2));
 }
 B. The sample output from the above main method:
-The max circle's radius is 15.0
-[Circle] radius = 15.0
+true
+0
 Process completed.
 */
 
